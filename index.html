@@ -879,6 +879,11 @@ onTap(document.getElementById('winNextBtn'),  () => nextLevel());
 // START
 // ══════════════════════════════════════════════════════════
 showSelect();
+
+// Service Worker 注册
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/Arrowmind/sw.js');
+}
 </script>
 </body>
 </html>
